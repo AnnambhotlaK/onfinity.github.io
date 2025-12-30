@@ -193,3 +193,92 @@ h2 {
         align-items: center;
     }
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    min-height: 500px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.policy-section, .contact-section {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+.policy-section h1, .contact-section h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.last-updated {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+
+.policy-section h2 {
+    color: #667eea;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container {
+    margin-top: 2rem;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.contact-email {
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: color 0.3s;
+}
+
+.contact-email:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        gap: 2rem;
+        min-height: auto;
+    }
+    
+    .hero-content, .hero-image {
+        flex: 1;
+    }
+}
