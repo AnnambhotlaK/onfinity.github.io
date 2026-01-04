@@ -53,17 +53,22 @@ body {
     padding: 8rem 5% 4rem;
     text-align: center;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 3rem;
+    /*margin-bottom: 1rem;*/
     color: #222;
 }
 
 .hero p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     color: #ffffff;
 }
 
@@ -243,6 +248,28 @@ h2 {
     color: #667eea;
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+.policy-section ul {
+    margin: 1.5rem 0 1.5rem 2rem;
+    list-style-position: outside;
+}
+
+.policy-section ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+    line-height: 1.6;
+}
+
+.policy-section ul li a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.policy-section ul li a:hover {
+    color: #764ba2;
+    text-decoration: underline;
 }
 
 .contact-container {
